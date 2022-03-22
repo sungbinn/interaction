@@ -9,14 +9,16 @@
     <style>
 
         body{
-            background-color: lightyellow;
+            background-color: sandybrown;
             transition: all 1s;
             height: 2000px;
             margin: 0;
+            display: flex;
+            justify-content: center;
         }
         
         .bgcolor--blue{
-            background-color: lightblue;
+            background-color: paleturquoise;
         }
 
         .bgcolor--gray {
@@ -78,7 +80,7 @@
         const btnReset = document.querySelector('.btn--reset');
         btnReset.addEventListener('click', function () {
             bgContainer.classList.remove('bg__img--show');
-            document.body,classList.remove('bgcolor--blue', 'bgcolor--gray', 'bg--img');
+            document.body.classList.remove('bgcolor--blue', 'bgcolor--gray', 'bg--img');
         });
 
         const btnBgGray = document.querySelector('.btn--bggray');
